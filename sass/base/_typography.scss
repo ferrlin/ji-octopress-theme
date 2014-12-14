@@ -1,0 +1,144 @@
+$mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
+$serif: "PT Serif", Georgia, Times, "Times New Roman", serif !default;
+$sans: "PT Serif", Georgia, Times, "Times New Roman", serif !default;
+$incon: Inconsolata $serif;
+// Fonts
+.heading {
+	font-family: $serif;
+}
+.sans { font-family: $sans; }
+.serif{ font-family: $serif;}
+.mono { font-family: $mono; }
+
+$header-text-color: #B58900 !default;
+
+body {
+	background-color: $base03;
+}
+
+#main {
+	color: $green;
+	font-size: .875em;
+	padding-left:1.563em;
+	a, & a:visited, & a:hover{
+		text-decoration: none;
+		color:$blue;
+	}
+}
+
+#main > header h1 {
+	color: $header-text-color;
+	margin-left: 3.75em;
+}
+
+#main > header h2 {
+	color: $orange;
+	font-size: 2.25em;
+}
+
+#main > header a {
+	text-decoration: none;
+	color: $blue;
+	font-size: 2.25em;
+}
+
+#main > footer {
+	font-size: .75em;
+	color: $orange;
+}
+
+
+// Main div
+
+
+// Article
+article {
+	color: $base0;
+	line-height: 18px;
+	font-size: 15px;
+	a, & a:visited, & a:hover {
+		text-decoration: none;
+		color: $blue;
+	}
+	h1 & h2 & h3 {
+	color: $yellow;
+}
+}
+
+article p {
+
+}
+
+article h1 {
+	font-size: 1.5em;
+}
+article h2 {
+	font-size: 1em;
+	margin-top: 1.6em;
+	margin-bottom: .313em;
+	letter-spacing:.063em;
+}
+article h3 {
+	font-size: .875em;
+	margin-top: 1.563em;
+	margin-bottom: .063em;
+}
+article h4 {
+	color: $solar-red;
+	font-size: .875em;
+	margin:0;
+	font-weight: normal;
+}
+article .article-signature {
+	float: right;
+	color: $violet;
+}
+article strong {
+	font-weight: normal;
+}
+article .article-read-more{
+	font-size: .875em;
+	line-height: 20px;
+	p {
+		margin: 0px;
+	}
+}
+article .article-read-more time {
+	display: block;
+	float:left;
+	width: 100px;
+	text-align: right;
+	margin-right: 10px;
+}
+
+#content {
+	margin-top: 4.375em;
+	font-family: $incon;
+	font-size: 1em;
+
+	#post & {
+		margin-top: 1.875em;
+	}
+	strong {
+		color: $solar-green;
+	}
+	div.image {
+		float:left;
+	}
+}
+
+#content nav[role=pagination] {
+	a {
+		margin-right: 15px;
+		background-color: $magenta;
+		padding: 3px;
+
+		&, &:visited, &:hover{
+			text-decoration: none;
+			color: #fff;
+		}
+	}
+}
+.sharing {
+	margin-top: 20px;
+}
