@@ -71,10 +71,19 @@ body {
 }
 #content {
 	> nav {
-		padding-left: 18px;
-		> ul li {
-			display: inline;
-		}			
+		ul{
+			@media only screen and (min-width: 768px){
+				margin-left: 55px;
+			}
+			
+			@media only screen and (min-width: 320px){
+				margin-left: 18px;
+			}
+
+			li {
+				display: inline;
+			}			
+		}
 	}
 }
 
