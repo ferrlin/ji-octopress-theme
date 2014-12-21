@@ -27,23 +27,27 @@ body {
 }
 
 #main > header h1 {
-	color: $header-text-color;
-	margin-left: 3.75em;
+	font-family: $incon;
+	font-size: 2.25em;
+	a, & a:visited, & a:hover{
+		color: $header-text-color;
+		text-decoration: none;
+	}
 }
 
 #main > header h2 {
 	color: $orange;
-	font-size: 2.25em;
+	font-family: $incon;
+	font-size: 1.25em;
 }
 
 #main > header a {
 	text-decoration: none;
-	color: $blue;
-	font-size: 2.25em;
+	font-size: 1.25em;
 }
 
 #main > footer {
-	font-size: .75em;
+	font-size: .9em;
 	color: $orange;
 }
 
@@ -60,9 +64,9 @@ article {
 		text-decoration: none;
 		color: $blue;
 	}
-	h1 & h2 & h3 {
-	color: $yellow;
-}
+	h1, h2, h3 {
+		color: $header-text-color;
+	}
 }
 
 article p {
@@ -115,6 +119,10 @@ article .article-read-more time {
 	margin-top: 4.375em;
 	font-family: $incon;
 	font-size: 1em;
+	.blog-index h3 {
+		font-size: 1em;
+		color: $header-text-color;
+	}
 
 	#post & {
 		margin-top: 1.875em;
@@ -136,6 +144,19 @@ article .article-read-more time {
 		&, &:visited, &:hover{
 			text-decoration: none;
 			color: #fff;
+		}
+	}
+	div {
+		margin-top: 15px;
+	}
+}
+
+#content .main-navigation > li {
+	 a {
+		&, &:visited, &:hover{
+			color: $header-text-color;
+			text-decoration: none;
+			padding: .2em .1em;
 		}
 	}
 }
